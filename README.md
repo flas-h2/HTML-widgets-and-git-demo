@@ -34,3 +34,9 @@
     Downloads changes from the remote, but doesn't merge them automatically.
 13. `git merge`
     Merges changes from one branch into another.
+14. `git clone <repo>`
+    Copies a remote repository to your local machine
+
+### **.gitignore**
+    Use this file to specify files that should not be tracked/committed by git.
+    Once a file is tracked by git, adding it to .gitignore won't remove it. You need to untrack it with git rm --cached 
