@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="collapsible.js" defer></script>
   </head>
   <body>
+    <div id="navbars">
+      <h2>Navbars</h2>
+      <nav class="nav collapsible">
+        <a class="nav_brand" href="#">Logo Here</a>
+        <svg class="icon icon-primary nav_toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav_list collapsible_content">
+          <li class="nav_item"><a href="#">Item 1</a></li>
+          <li class="nav_item"><a href="#">Item 2</a></li>
+          <li class="nav_item"><a href="#">Item 3</a></li>
+          <li class="nav_item"><a href="#">Item 4</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="hero-section">
+      <section class="block block-dark block-skewed-left hero">
+        <div class="block-container grid grid-2-col">
+          <header class="block_header hero_content">
+            <h1 class="block_heading">My Super fun HTML Component Page</h1>
+            <p class="hero_tagline">
+              All the markup you need for super fun html components
+            </p>
+            <a href="#" class="btn btn-primary">Check it out!</a>
+          </header>
+          <img class="hero_image" src="images/image.png" alt="" />
+        </div>
+      </section>
+    </div>
     <h1>I'm an H1 - using our headings color</h1>
     <div id="widget-grid">
       <div id="link-div">
@@ -48,6 +78,7 @@
         </div>
       </div>
       <div id="icon-div">
+        <h2>Icons with svg</h2>
         <p>
           I like computers (sometimes)
           <span class="icon-container">
@@ -57,7 +88,7 @@
           </span>
         </p>
         <p>
-          My feelings about wordpress
+          my feelings about wordpress
           <span class="icon-container">
             <svg class="icon icon-primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -67,13 +98,140 @@
       </div>
       <div id="button-div">
         <h2>Buttons</h2>
-        <button>Regular Button</button>
-        <button class="btn btn-primary">Buy Now!</button>
-        <a href="#" class="btn btn-secondary btn-block">Buy Now!</a>
+        <button>Regular button</button>
+        <button class="btn btn-primary">Buy now!</button>
+        <a href="#" class="btn btn-secondary btn-block">Buy Now</a>
       </div>
       <div id="input-div">
         <h2>Inputs</h2>
         <input type="text" class="custom-input" placeholder="Enter your SSN" />
+      </div>
+      <div id="s-media-div">
+        <h2>Media Objects</h2>
+        <div class="media">
+          <div class="media-image">
+            <svg class="icon icon-primary">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+          </div>
+          <div class="media-body">
+            <h3 class="media-title">This is a note about planets</h3>
+            <p>
+              Jupiter is made of gas. It is the largest planet and it has a
+              perpetual raging storm that looks like a red dot.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="styled-quotes-div">
+        <h2>Quotes (styled)</h2>
+        <blockquote class="quote">
+          <p class="quote-text">
+            Your mind is like this water, my friend. When it is agitated, it
+            becomes difficult to see. But if you allow it to settle, the answer
+            becomes clear
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media-image">
+                <img class="icon" src="images/image.png" alt="Master Oogway" />
+              </div>
+              <div class="media-body">
+                <h3 class="media-title quote-author">Master Oogway</h3>
+                <p class="quote-organization">Kung Fu Panda</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div id="grid-div">
+        <h2>More Grids!</h2>
+        <h3>1x3</h3>
+        <div class="grid grid-3-col">
+          <div style="height: 100px; background: gold"></div>
+          <div style="height: 100px; background: dodgerblue"></div>
+          <div style="height: 100px; background: tomato"></div>
+        </div>
+        <h3>1x2</h3>
+        <div class="grid grid-2-col">
+          <div style="height: 100px; background: gold"></div>
+          <div style="height: 100px; background: dodgerblue"></div>
+        </div>
+      </div>
+      <div id="cards">
+        <h2>Cards</h2>
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card_img">
+              <img src="images/Bowser.png" alt="Bowser - King of Koopas" />
+            </div>
+            <header class="card-header">Bowser</header>
+            <div class="card-body">
+              He is the arch-nemesis of the plumber Mario and the leader of the
+              turtle-like Koopa race. Depicted as a fire-breathing monster with
+              a tyrannical personality.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="images/Bowser.png" alt="Bowser - King of Koopas" />
+            </div>
+            <header class="card-header">Bowser</header>
+            <div class="card-body">
+              He is the arch-nemesis of the plumber Mario and the leader of the
+              turtle-like Koopa race. Depicted as a fire-breathing monster with
+              a tyrannical personality.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="images/Bowser.png" alt="Bowser - King of Koopas" />
+            </div>
+            <header class="card-header">Bowser</header>
+            <div class="card-body">
+              He is the arch-nemesis of the plumber Mario and the leader of the
+              turtle-like Koopa race. Depicted as a fire-breathing monster with
+              a tyrannical personality.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="images/Bowser.png" alt="Bowser - King of Koopas" />
+            </div>
+            <header class="card-header">Bowser</header>
+            <div class="card-body">
+              He is the arch-nemesis of the plumber Mario and the leader of the
+              turtle-like Koopa race. Depicted as a fire-breathing monster with
+              a tyrannical personality.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="collapsibles">
+        <h2>Collapsibles (use JS for DOM Manipulation)</h2>
+        <div class="collapsible collapsible-expanded">
+          <header class="collapsible_header">
+            <h3 class="collapsible_heading">Item 1</h3>
+            <svg class="icon icon-primary collapsible_chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible_content">
+            <p>Hi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="blocks">
+        <h2>Blocks</h2>
+        <div class="block-container">
+          <section class="block block-dark block-skewed-left">
+            <header class="block_header">
+              <h2 class="block_heading">Heading</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </header>
+          </section>
+        </div>
       </div>
     </div>
   </body>
